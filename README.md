@@ -21,7 +21,7 @@ To train a policy, run the following command:
 ``python run.py --env HalfCheetah-v2 --max_iter 20000 --visualize``
 
 - `HalfCheetah-v2` can be replaced with other environments.
-- `max_iter` specifies the maximum number of training iterations.
+- `--max_iter` specifies the maximum number of training iterations.
 - `--visualize` enables visualization, and rendering can be disabled by removing the flag.
 - The log and model will be saved to the `output/` directory by default. But the output directory can also be specified with `--output_dir [output-directory]`.
 
