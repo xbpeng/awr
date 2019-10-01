@@ -3,8 +3,8 @@ import numpy as np
 import tensorflow as tf
 
 import learning.rl_agent as rl_agent
-import util.rl_path as rl_path
 import util.net_util as net_util
+import util.rl_path as rl_path
 
 '''
 Advantage-Weighted Regression Agent
