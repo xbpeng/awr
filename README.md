@@ -41,4 +41,4 @@ To load a train model, run the following command:
 
 ## Data
 - `data/policies/` contains pretrained models for the different environments.
-- `data/logs/` contains the training logs for the different environments, which can be used to plot learning curves.
+- `data/logs/` contains training logs for the different environments, which can be used to plot learning curves.
