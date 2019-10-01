@@ -37,7 +37,7 @@ To load a trained model, run the following command:
 
 - `learning/rl_agent.py` is the base agent class, and implements basic RL functionalties.
 - `learning/awr_agent.py` implements the AWR algorithm. The `_update()` method performs one update iteration.
-- `awr_configs.py` can be used to specify hyperparameters for the different environments. If not configuration is specified for a particular environment, than the algorithm will use the default hyperparameter settings in `learning/awr_agent.py`.
+- `awr_configs.py` can be used to specify hyperparameters for the different environments. If no configurations are specified for a particular environment, than the algorithm will use the default hyperparameter settings in `learning/awr_agent.py`.
 
 ## Data
 - `data/policies/` contains pretrained models for the different environments.
