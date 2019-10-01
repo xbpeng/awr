@@ -2,7 +2,7 @@
 
 Code accompanying the paper:
 "Advantage-Weighted Regression: Simple and Scalable Off-Policy Reinforcement Learning".
-The framework provides an implementation of AWR and supports running experiments on standard OpenAI Gym benchmarks.
+The framework provides an implementation of AWR and supports running experiments on standard OpenAI Gym environments.
 
 Project page: https://xbpeng.github.io/projects/AWR/index.html
 
