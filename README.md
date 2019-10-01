@@ -27,7 +27,7 @@ To train a policy, run the following command:
 
 ## Loading Models
 
-To load a train model, run the following command:
+To load a trained model, run the following command:
 
 ``python run.py --test --env HalfCheetah-v2 --model_file data/policies/halfcheetah_awr.ckpt --visualize``
 
