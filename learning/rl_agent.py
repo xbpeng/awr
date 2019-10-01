@@ -1,8 +1,8 @@
-import gym
 import abc
+import copy
+import gym
 import os
 import time
-import copy
 import numpy as np
 import tensorflow as tf
 
