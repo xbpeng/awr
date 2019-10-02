@@ -1,10 +1,10 @@
 import abc
 import copy
 import gym
-import os
-import time
 import numpy as np
+import os
 import tensorflow as tf
+import time
 
 import util.logger as logger
 import util.normalizer as normalizer
