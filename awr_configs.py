@@ -80,12 +80,12 @@ AWR_CONFIGS = {
     "Humanoid-v2":
     {
         "actor_net_layers": [128, 64],
-        "actor_stepsize": 0.00005,
+        "actor_stepsize": 0.00001,
         "actor_momentum": 0.9,
         "actor_init_output_scale": 0.01,
         "actor_batch_size": 256,
         "actor_steps": 1000,
-        "action_std": 0.2,
+        "action_std": 0.4,
         
         "critic_net_layers": [128, 64],
         "critic_stepsize": 0.01,
