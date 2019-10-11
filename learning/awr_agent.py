@@ -36,7 +36,7 @@ class AWRAgent(rl_agent.RLAgent):
                  discount=0.99,
                  samples_per_iter=2048,
                  replay_buffer_size=50000,
-                 normalizer_samples=100000,
+                 normalizer_samples=300000,
 
                  weight_clip=20,
                  td_lambda=0.95,
