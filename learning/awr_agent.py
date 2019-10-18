@@ -228,8 +228,8 @@ class AWRAgent(rl_agent.RLAgent):
         # update actor
         vals = self._compute_batch_vals(idx)
         new_vals = self._compute_batch_new_vals(idx, vals)
-        adv, adv_mean, adv_std = self._calc_adv(new_vals, vals, valid_mask)
-        adv_weights, adv_weights_mean, adv_weights_min, adv_weights_max = self._calc_adv_weights(adv, valid_mask)
+        adv, norm_adv, adv_mean, adv_std = self._calc_adv(new_vals, vals, valid_mask)
+        adv_weights, adv_weights_mean, adv_weights_min, adv_weights_max = self._calc_adv_weights(norm_adv, valid_mask)
         
         actor_steps = int(np.ceil(self._actor_steps * new_sample_count / self._samples_per_iter))
         actor_losses = self._update_actor(actor_steps, valid_idx, adv_weights)
@@ -400,8 +400,8 @@ class AWRAgent(rl_agent.RLAgent):
         adv_mean = np.mean(valid_adv)
         adv_std = np.std(valid_adv)
 
-        adv = (adv - adv_mean) / (adv_std + self.ADV_EPS)
-        return adv, adv_mean, adv_std
+        norm_adv = (adv - adv_mean) / (adv_std + self.ADV_EPS)
+        return adv, norm_adv, adv_mean, adv_std
 
     def _calc_adv_weights(self, adv, valid_mask):
         weights = np.exp(adv / self._temp)
